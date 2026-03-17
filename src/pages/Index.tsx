@@ -1,16 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ProductionSection from "@/components/ProductionSection";
+import TripleSection from "@/components/TripleSection";
+import BalanceSection from "@/components/BalanceSection";
+import ConclusionSection from "@/components/ConclusionSection";
+import CtaSection from "@/components/CtaSection";
+import Footer from "@/components/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+/* ===== PÁGINA PRINCIPAL =====
+   Junta todas as seções do site em ordem,
+   seguindo os 6 slides da apresentação.
+*/
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen">
+      {/* Menu fixo no topo */}
+      <Navbar />
+
+      {/* Slide 1: Hero - Futuro Sustentável */}
+      <HeroSection />
+
+      {/* Slide 2: A Produção */}
+      <ProductionSection />
+
+      {/* Slide 3: Tripé da Sustentabilidade */}
+      <TripleSection />
+
+      {/* Slide 4: Equilíbrio Produção x Meio Ambiente */}
+      <BalanceSection />
+
+      {/* Slide 5: Impacto + Conclusão */}
+      <ConclusionSection />
+
+      {/* Slide 6: Compra + Obrigado */}
+      <CtaSection />
+
+      {/* Rodapé */}
+      <Footer />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
